@@ -1,0 +1,10 @@
+/* Design tokens + 6 visual presets. Switch via data-preset on <html>. */
+:root{--radius:14px;--gap:20px;--maxw:1180px;--font-body:Georgia,'Times New Roman',serif;--font-ui:system-ui,-apple-system,Segoe UI,sans-serif;--font-display:Georgia,serif}
+html[data-preset="archive"]{--bg:#f7f2e7;--surface:#fffdf6;--ink:#211d16;--muted:#6b6252;--accent:#8a6d1f;--accent2:#3d5a45;--line:#ddd2ba;--chart:#8a6d1f}
+html[data-preset="observatory"]{--bg:#0d1226;--surface:#161c38;--ink:#e9ecff;--muted:#9aa3c7;--accent:#c9a227;--accent2:#7ec8e3;--line:#2a3358;--chart:#7ec8e3;--font-display:'Trebuchet MS',system-ui,sans-serif}
+html[data-preset="atelier"]{--bg:#111;--surface:#1c1c1c;--ink:#f2ead9;--muted:#a99f8a;--accent:#c9a227;--accent2:#e8dcc0;--line:#333;--chart:#c9a227;--font-display:'Playfair Display',Georgia,serif}
+html[data-preset="codex"]{--bg:#efe6d0;--surface:#fbf5e3;--ink:#2e2416;--muted:#7a6a4d;--accent:#7a2e1d;--accent2:#445c2a;--line:#cbbd93;--chart:#7a2e1d;--font-body:'Palatino Linotype',Palatino,Georgia,serif}
+html[data-preset="future"]{--bg:#f4f6f8;--surface:#fff;--ink:#0f172a;--muted:#64748b;--accent:#0f4c81;--accent2:#0ea5a4;--line:#dbe3ea;--chart:#0f4c81;--font-body:system-ui,sans-serif;--font-display:system-ui,sans-serif;--radius:6px}
+html[data-preset="minimal"]{--bg:#fff;--surface:#fff;--ink:#111;--muted:#777;--accent:#111;--accent2:#111;--line:#e5e5e5;--chart:#111;--font-body:system-ui,sans-serif;--font-display:system-ui,sans-serif;--radius:2px}
+.badge{font:10px/1 var(--font-ui);letter-spacing:.06em;border:1px solid var(--line);padding:3px 7px;border-radius:99px;color:var(--muted);white-space:nowrap}
+.badge.computed{color:var(--accent2);border-color:var(--accent2)} .badge.unavailable{color:#b34724;border-color:#b34724}
